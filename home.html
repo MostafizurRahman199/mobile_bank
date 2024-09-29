@@ -31,24 +31,40 @@
               <!-- amount start -->
                 <div class="flex justify-between items-center w-full px-2">
                     <div class="stats shadow">
-                        <div class="stat">
+                        <div class="stat flex justify-center items-center p-2 gap-1">
                          
-                          <div class="stat-value text-xl" id="balance">89400</div>
-                          <div class="stat-desc">Available Balance</div>
+                          <img class="w-14 p-0" src="./images/money-bag.png" alt="">
+                          <div>
+                            <div class="stat-value text-xl" id="balance">89400</div>
+                            <div class="stat-desc">Available Balance</div>
+                          </div>
                         </div>
 
                     </div>
-                    <button class="btn" id="logout">Logout</button>
+                    <button class="btn" id="logout">
+                      <img class="w-4" src="./images/logout.png" alt="">
+                      <span>Logout</span>
+                    </button>
                 </div>
                 <!-- amount end -->
-                <div class="divider "></div>
-               <div>
-                <button class="btn" id="addMoney" name="addMoneyBtn">Add Money</button>
-                <button class="btn" id="cashOut" name="cashOutBtn">CashOut</button>
+                <div class="divider p-0 m-0"></div>
+               <div class="flex flex-wrap gap-2 p-2 justify-center items-center">
+                <button class="btn p-2" id="addMoney" name="addMoneyBtn">
+                  <img class="w-8" src="./images/addMoney.png" alt="">
+                 <span> Add Money</span>
+                </button>
+                <button class="btn" id="cashOut" name="cashOutBtn">
+                  <img class="w-8" src="./images/cashOut.png" alt="">
+                  CashOut
+                </button>
+                <button class="btn " id="transactionBtn" name="cashOutBtn">
+                  <img class="w-8" src="./images/transaction.png" alt="">
+                  Transaction
+                </button>
                </div>
-               <div class="divider "></div>
+               <div class="divider p-0 m-0"></div>
                <!-- start form -->
-               <div class="space-y-4   px-4 rounded-3xl hide" id="form">
+               <div class="space-y-4  px-4 rounded-3xl hide" id="form">
                
                 <form class="max-w-sm mx-auto">
                   <label
@@ -75,6 +91,8 @@
                   </div>
                   
                 </form>
+
+                
                 <form class="max-w-sm mx-auto">
                   <label
                     for="phone-input"
@@ -109,7 +127,12 @@
                </div>
                <!-- end form -->
             
-
+               <!-- Transaction Start -->
+                <div id="transaction" class="border-2 p-2 overflow-y-auto hide">
+                  <h1 class="text-center m-1 font-bold">Transaction History</h1>
+                 
+                </div>
+                <!-- Transaction End -->
 
             </div>
           </div>
